@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title>learning project forms</title>
+</head>
+<body>
+	<h1>Привет друг, заполни пожайлуста эту форму!</h1>
+	<form action="dataform.php" method="post" enctype="multipart/form-date">
+		<fieldset><legend>Ввод личных данных:</legend>
+			<p><label>Введите Ваше имя:<input type="text" name="username" value=""></label></p>
+			<p><label>Введите Ваш пароль:<input type="password" name="password" value=""></label></p>
+			<p><label>Введите Ваш номер телефона:<input type="tel" name="telephon" value=""></label></p>
+		</fieldset>
+		<fieldset>
+			<legend>Вопросы:</legend>
+			<p>Вы работаете?
+			<label>Да<input type="radio" name="job" value="yes"></label>
+			<label>Нет<input type="radio" name="job" value="no"></label>
+			</p>
+			<br>
+			<p>Какое у вас образование?</p>
+			<p><label><input type="checkbox" name=school value="">Школа</label></p>
+			<p><label><input type="checkbox" name=profschool value="">Училище</label></p>
+			<p><label><input type="checkbox" name=college value="">Колледж</label></p>
+			<p><label><input type="checkbox" name=university value="">Университет</label></p>
+			<br>
+			<p>Ваш возраст?</p>
+			<select>
+				<option value="18<=">младше или равен 18</option>
+				<option selected value="">младше или равен 25</option>
+				<option value="">младше или равен 35</option>
+				<option value="">младше или равен 45</option>
+				<option value="">младше или равен 55</option>
+				<option value="">младше или равен 65</option>
+				<option value="">младше или равен 75</option>
+				<option value="">младше или равен 85</option>
+			</select>
+			<br>
+			<p><label for="feedback">Оставте отзыв о нашем проекте: </label></p>
+				<textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+
+		</fieldset>
+		<br>
+		<button  src="img/post" value="submit">Отправить</button>
+
+	</form>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
